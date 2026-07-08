@@ -1,0 +1,17 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascriptreact",
+    "html": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class=\\s*\"([^\"]*)\"", "class=\"([^\"]*)\""],
+    ["className=\\s*\"([^\"]*)\"", "className=\"([^\"]*)\""]
+  ],
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "liveServer.settings.port": 5501
+}
