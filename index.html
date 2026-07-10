@@ -3,14 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="components/Header.js" type="text/babel" defer></script>
   <script src="js/script.js" defer></script>
-  <title>Document</title>
+  <title>SUWANAVI</title>
 </head>
 <body>
+  <header class="sticky top-0 z-50" id="header"></header>
+  <section class="hero">
+    <p class="text-center dm-serif-display-regular text-white text-5xl">Discovering SUWA</p>
+  </section>
+  <main class="p-4">
+    <div class="flex flex-col items-center">
+      <h1 class="dm-serif-display-regular text-3xl font-bold text-center">PLACE</h1>
+      <div class="grid grid-cols-2 gap-4 mx-12 my-4 max-w-[800px]" id="places"></div>
+      <a class="m-2 px-8 py-2 bg-white border rounded-4xl" href="place/">全て見る<span>&gt</span></a>
+    </div>
+    <div class="flex flex-col items-center">
+      <h1 class="dm-serif-display-regular text-3xl font-bold text-center">EVENTS</h1>
+      <div class="grid grid-cols-2 gap-4 mx-12 my-4 max-w-[800px]" id="events"></div>
+      <a class="m-2 px-8 py-2 bg-white border rounded-4xl" href="events/">全て見る<span>&gt</span></a>
+    </div>
+  </main>
+  <footer></footer>
 </body>
 </html>
