@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="../lib/components/Header.js" type="text/babel" defer></script>
+  <script src="../js/contact.js" defer></script>
+  <title>お問合せ | SUWANAVI</title>
+</head>
+<body>
+  <header class="sticky top-0 z-50" id="header"></header>
+  <main class="px-4 py-2">
+    <h1 class="my-4 px-3 py-1 font-bold text-3xl border-l-4 border-green-500">お問い合せ</h1>
+    <div class="p-4 bg-gray-100">
+      <form
+        action=""
+        class="flex flex-col my-2"
+        id="contact"
+      >
+        <label class="mb-4 must"><span>お名前</span><br>
+          <input type="text" class="px-2 py-1 w-full bg-white border border-gray-300 rounded-sm">
+          <p class="ml-2 text-[#F00]"></p>
+        </label>
+        <label class="mb-4 must"><span>メールアドレス</span><br>
+          <input type="email" class="px-2 py-1 w-full bg-white border border-gray-300 rounded-sm">
+          <p class="ml-2 text-[#F00]"></p>
+        </label>
+        <label class="mb-4 must"><span>件名</span><br>
+          <input type="text" class="px-2 py-1 w-full bg-white border border-gray-300 rounded-sm">
+          <p class="ml-2 text-[#F00]"></p>
+        </label>
+        <label class="mb-4 must"><span>内容</span><br>
+          <textarea class="px-2 py-1 w-full bg-white border border-gray-300 rounded-sm"></textarea>
+          <p class="ml-2 text-[#F00]"></p>       
+        </label>
+        <button class="p-1 w-[4rem] bg-white border border-gray-300 rounded-sm">送信</button>
+      </form>
+      <p class="ml-2"><span class="text-[#F00]">*</span>は必須項目です。</p>
+      <div id="notice"></div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

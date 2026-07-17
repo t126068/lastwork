@@ -7,6 +7,11 @@
     background: url('../images/34623407_m.webp') no-repeat center / cover;
 }
 
+.must span::after {
+  content: "*";
+  color: red;
+  margin-left: 1rem;
+}
 
 /* fonts */
 
