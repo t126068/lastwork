@@ -1,8 +1,10 @@
+//
+
 const form = document.querySelector('#contact')
 const notice = document.querySelector('#notice')
 
-form.addEventListener('submit', (e) => {
-  const reqs = form.querySelectorAll('.must input, .must textarea')
+const validater = (event) => {
+const reqs = form.querySelectorAll('.must input, .must textarea')
   let hasEmpty = false
 
   reqs.forEach(req => {
@@ -16,11 +18,13 @@ form.addEventListener('submit', (e) => {
   })
 
   if(hasEmpty) {
-    e.preventDefault()
+    event.preventDefault()
     notice.textContent = '入力内容に問題があります。確認して再度お試しください。'
     notice.className = 'm-2 p-1 border border-black'
   } else {
     notice.textContent = ''
     notice.className = ''
   }
-})
+}
+
+form.addEventListener('submit', (e) => {validater(e)})
