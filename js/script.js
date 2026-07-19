@@ -1,8 +1,8 @@
 import placeList from "../lib/data/placeList.js"
 import eventList from "../lib/data/eventList.js"
 
-const places = document.querySelector('#places')
-const events = document.querySelector('#events')
+const places = document.getElementById('places')
+const events = document.getElementById('events')
 
 for(let i = 0; i < 2; i++) {
   const {name, img, url} = placeList[i]

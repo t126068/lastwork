@@ -1,5 +1,5 @@
-const form = document.querySelector('#contact')
-const notice = document.querySelector('#notice')
+const form = document.getElementById('contact')
+const notice = document.getElementById('notice')
 
 const validater = (event) => {
   const reqs = form.querySelectorAll('.must input, .must textarea')
