@@ -1,10 +1,8 @@
-//
-
 const form = document.querySelector('#contact')
 const notice = document.querySelector('#notice')
 
 const validater = (event) => {
-const reqs = form.querySelectorAll('.must input, .must textarea')
+  const reqs = form.querySelectorAll('.must input, .must textarea')
   let hasEmpty = false
 
   reqs.forEach(req => {
